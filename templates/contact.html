@@ -11,11 +11,11 @@
 <body>
     <div class="contact-section">
         <h1>Contact Us</h1>
-        <form class="contact-form" action="contact.html" method="post">
-            <input type="text" class="contact-form-text" placeholder="Your name">
-            <input type="email" class="contact-form-text" placeholder="Your email">
-            <input type="text" class="contact-form-text" placeholder="phone number">
-            <textarea class="contact-form-text" placeholder="your Query"></textarea>
+        <form class="contact-form" action="submit_form" method="post">
+            <input name="name" type="text" class="contact-form-text" placeholder="Your name">
+            <input name="email" type="email" class="contact-form-text" placeholder="Your email">
+            <input name="subject" type="text" class="contact-form-text" placeholder="Subject">
+            <textarea name="message" class="contact-form-text" placeholder="Your Query"></textarea>
             <input type="submit" class="contact-form-btn" value="Send">
 
         </form>

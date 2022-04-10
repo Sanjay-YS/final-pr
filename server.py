@@ -17,12 +17,13 @@ def page_render(page_name):
 
 def write_to_csv(data):
     with open('database.csv', newline='', mode='a') as database:
+        name = data["name"]
         email = data["email"]
         subject = data["subject"]
         message = data["message"]
         csv_writer = csv.writer(database, delimiter=',',
                                 quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        csv_writer.writerow([email, subject, message])
+        csv_writer.writerow([name, email, subject, message])
 
 
 @app.route('/submit_form', methods=['POST', 'GET'])
