@@ -1,111 +1,222 @@
+<!-- Download -->
 <!DOCTYPE html>
-<html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    <meta charset="utf-8">
+    <title>Download</title>
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  cursor: pointer;
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: rgb(114, 104, 104);
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #4f4c4c;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: rgb(245, 239, 239);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: rgba(123, 45, 45, 0.765);
-}
-
-.show {
-  display: block;
-}
-body {
-    background-image: url("/static/assets/images/bg.png");
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
+    <div class="container">
+        <div class="card">
+            <div class="img">
+                <img src="/static/assets/images/bare.gif">
+            </div>
+            <div class="top-text">
+                <div class="name">
+                    Barebone Edition
+                </div>
 
-<div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="#">Download</a>
-  <div class="dropdown">
-  <button class="dropbtn" onclick="myFunction()">More
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-content" id="myDropdown">
-    <a href="about.html">About Us</a>
-    <a href="#">Help</a>
-    <!-- <a href="#">Link 3</a> -->
-  </div>
-  </div> 
-</div>
+            </div>
+            <div class="bottom-text">
+                <div class="text">
+                    A barebones edition aimed at developers, ships with very limited packages. Mind that you are on your
+                    own here!
+                </div>
+                <div class="btn">
+                    <a
+                        href="https://drive.google.com/file/d/14C_NIyWJgvPX-NQbMrjJ1h4bvN4gKbs7/view?usp=sharing">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="/static/assets/images/user.gif">
+            </div>
+            <div class="top-text">
+                <div class="name">
+                    Desktop
+                </div>
 
-<h3>Dropdown Menu inside a Navigation Bar</h3>
-<p>Click on the "Dropdown" link to see the dropdown menu.</p>
+            </div>
+            <div class="bottom-text">
+                <div class="text">
+                    The main core system aimed at the common users which provides the full desktop experience, ships
+                    with all the necessary packages you need beforehand.
+                </div>
+                <div class="btn">
+                    <a
+                        href="https://drive.google.com/file/d/1B-Kw6l7f6bHXCeEozhXEnTtHy3nmnW6f/view?usp=sharing">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="/static/assets/images/art2.gif">
+            </div>
+            <div class="top-text">
+                <div class="name">
+                    Artists
+                </div>
+                <!-- <p>
+                    Graphic Developer
+                </p> -->
+            </div>
+            <div class="bottom-text">
+                <div class="text">
+                    Do you like Painting/Video Editing/Drawing? You are in the right spot, go ahead and dwnload this
+                    version built for Artists, ships with all the necessary applications that you might need right at
+                    the start and to get going.
+                </div>
+                <div class="btn">
+                    <a
+                        href="https://drive.google.com/file/d/1R5NnPBvrlCF-a2r-E9dOt49qr96k598u/view?usp=sharing">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="/static/assets/images/art1.png">
+            </div>
+            <div class="top-text">
+                <div class="name">
+                    Teachers/Students
+                </div>
 
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+            </div>
+            <div class="bottom-text">
+                <div class="text">
+                    If you are a Student or a Teacher, worry not; we provide this desktop just for you which ships with
+                    the all necessary applications for you to boost your productivity, knowledge and more..
+                </div>
+                <div class="btn">
+                    <a
+                        href="https://drive.google.com/file/d/1OEi7CuDPtM5frP7_YrnEFMOZVOn71II6/view?usp=sharing">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-</script>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            display: grid;
+            place-items: center;
+            background: #f2f2f2;
+            text-align: center;
+        }
+
+        .container {
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card {
+            height: 280px;
+            max-width: 350px;
+            margin: 0 20px;
+            background: white;
+            transition: 0.4s;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover {
+            height: 470px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card .img {
+            height: 200px;
+            width: 100%;
+        }
+
+        .card .img img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card .top-text {
+            padding: 5px;
+        }
+
+        .card .top-text .name {
+            font-size: 25px;
+            font-weight: 600;
+            color: #202020;
+        }
+
+        .card .top-text p {
+            font-size: 20px;
+            font-weight: 600;
+            color: #e74c3c;
+            line-height: 20px;
+        }
+
+        .card .bottom-text {
+            padding: 0 20px 10px 20px;
+            margin-top: 5px;
+            background: white;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.1s;
+        }
+
+        .card:hover .bottom-text {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .card .bottom-text .text {
+            text-align: justify;
+        }
+
+        .card .bottom-text .btn {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .card .bottom-text .btn a {
+            text-decoration: none;
+            background: #e74c3c;
+            color: #f2f2f2;
+            padding: 5px 8px;
+            border-radius: 3px;
+            display: inline-flex;
+            transition: 0.2s;
+        }
+
+        .card .bottom-text .btn a:hover {
+            transform: scale(0.9);
+        }
+
+        @media screen and (max-width: 978px) {
+            .container {
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
+            .card {
+                max-width: 700px;
+                margin: 20px 0;
+            }
+        }
+    </style>
 </body>
+
 </html>
